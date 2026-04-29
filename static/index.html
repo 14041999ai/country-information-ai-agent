@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Information AI Agent</title>
+    <meta name="description" content="Ask questions about any country and get instant, accurate answers.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Animated background elements -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <div class="logo-icon">🌍</div>
+            </div>
+            <div class="header-text">
+                <h1>Country Info AI</h1>
+                <p>Ask anything about a country</p>
+            </div>
+        </header>
+
+        <main class="chat-container" id="chat-container">
+            <!-- Initial welcome message -->
+            <div class="message-wrapper bot">
+                <div class="message bot-message">
+                    Hello! I'm your Country Information Agent. You can ask me questions like:
+                    <ul>
+                        <li>What is the population of Germany?</li>
+                        <li>What currency does Japan use?</li>
+                        <li>What is the capital and population of Brazil?</li>
+                    </ul>
+                    How can I help you today?
+                </div>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <form id="chat-form" class="chat-form">
+                <input 
+                    type="text" 
+                    id="question-input" 
+                    placeholder="e.g. What is the population of France?" 
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit" id="send-button" aria-label="Send message">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </form>
+        </footer>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
